@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href = "css/bootstrap.min.css" rel = "stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href = "css/font-awesome.min.css" rel = "stylesheet">
+<link href = "css/sanSourcePro.css" rel = "stylesheet">
+<script src="js/Common.js"></script>
+</head>
+<body>
+<span>
+<img class="center fit" src="img/small-business-lending.jpg" ></span>
+<form name="loginform">
+	<div class="mainheading">
+		<h1>LOAN ORIGINATING SYSTEM<h1>
+	</div>
+
+	<div class="jumbotron pannelbody panel panel-default" style="background-color: #00000033;">
+	
+	<div class="panel-body">
+	 
+		<div class="form-group">
+					<div class="input">
+						 <input id="Username" name="username" type="text" placeholder ="Username" class="input-md form-control" required> 
+						 </div>
+  		</div>
+  		<div class="form-group">
+	               <div class="input">
+						 <input id="password" type="password"  placeholder ="Password"class=" input-md form-control" required>
+					</div>
+		</div>
+		<div class="form-group">
+			<div class="input">
+						<select  class="form-control dropdown" style="border-radius: 1em;"name="DealerRto" id="loginuser">
+                                  <option  value="" disabled selected>Login as</option>
+									<option value="PreUser" name="PreUser">Prequalification User</option>
+                                   <option value="Banker" name="Banker">Banker</option>
+								   <option value="Valuer" name="Valuer">Valuer</option>
+								   <option value="Soliciter" name="Soliciter">Soliciter</option>
+								   <option value="UnderWriter" name="UnderWriter">UnderWriter</option>
+								   <option value="Customer" name="Customer">Customer</option>
+						</select>
+			</div>
+		</div>
+  				<div id ="sub" style="color:D80313"></div>
+				<div class="form-group ">
+					<div class="input">
+						<button id="submit" type="button" class="input-md form-control" style=" background-color: #80808073;
+    border-color: #80808073;border-radius: 1em;color:white"onClick="Login()"><b>LOGIN<b></button>
+  					</div>
+				</div>
+		
+		</div>
+</div>
+<script src="JS/jquery-3.1.1.min.js"></script>
+<script src="JS/bootstrap.min.js"></script>
+
+<script src="js/jquery-latest.js"></script>
+ <script type="text/javascript" language="JavaScript">
+  function set_body_height() { // set body height = window height
+    $('body').height($(window).height());
+  }
+  $(document).ready(function() {
+    $(window).bind('resize', set_body_height);
+    set_body_height();
+  });
+</script> 
+</form>
+</body>
+</html>

@@ -1,0 +1,256 @@
+/* userLogin starts here */
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .fit { /* set relative picture size */
+  width:100%;
+    max-width: 100%;
+    max-height: 100%;
+	height:auto;
+	position:relative;
+  }
+  .center {
+    display: block;
+    margin: auto;
+  }
+  .pannelbody { 
+   position: absolute;
+    top: 150px;
+	right: 10%;
+    width: 25%;
+    height: auto;
+}
+.mainheading>h1 { 
+   position: absolute;
+   top: 50px;
+   padding-left:2%;
+   width: 55%;
+   height: auto;
+   font-family: calibri;
+   font-size: 50px;
+}
+
+/* ::-webkit-input-placeholder { /* Chrome/Opera/Safari 
+  color: pink;
+} */
+ input::placeholder {
+  color: orange;
+ } 
+.input {
+    position: relative;
+    display: -webkit-box;
+    border-collapse: separate;
+    border-radius: 1em;
+}
+input[type="text"],input[type="password"],input[type="submit"]
+ {
+ border-radius: 1em;
+  border: 2px solid orange;
+ }
+ .dropdown{
+    position: initial;
+    align-self: center;
+    text-align: center;
+ }
+ .form-group{
+ font-family: calibri;
+ font-size: 25px;
+ color: white;
+ }/* 
+ User Login style ends here */
+/*  prequalification user style starts here */
+ .userlogo
+ {
+ width:11.0%;
+ } 
+ /* prequalification user style ends here */
+ /* valuer dashboard style starts here */
+ 
+ .vdashboardimage{
+ width: -webkit-fill-available;
+    width: -moz-available;
+    /* display: block; */
+    max-width: 100%;
+	position:absolute;
+}
+ .header img {
+  float: left;
+  width: 100px;
+  height: 100px;
+}
+.header h1 {
+  position: relative;
+  top: 18px;
+  left: 10px;
+  color:#184863;
+}
+.vnavbar{
+ background-color: #184863;
+    border-color: #184863;
+    font-family: calibri;
+    font-size: 15px;
+ }
+ .valuertable{
+background-color:#184863;
+font-size: 15px;
+    font-family: calibri;
+    color: white;
+}
+.vcontainer-fluid {
+    /* padding-right: 15px; */
+    /* padding-left: 15px; */
+    margin-right: auto;
+    margin-left: auto;
+}
+ /*  valuer dashboard ends here */
+/*user Dashboard html style starts here  */
+.date{
+float: right;
+
+}
+.dashboardimage{
+width:-webkit-fill-available;
+width: -moz-available;
+position:absolute
+}
+.logo{
+position:relative;
+width:14.5%;
+}
+.navbar {
+    background-color: #017abd;
+    border-color: #017abd;
+	font-family: calibri;
+    font-size: 15px;
+}
+
+.hover>li>a:hover{
+    text-decoration: none;
+    background-color: #eeeeee17;
+    border: 1px solid white;
+    border-radius: 1em;
+    color: white;
+	font-size:15px;
+    /* width: 75%; */
+}
+thead{
+background-color:#017abd;
+font-size: 15px;
+    font-family: calibri;
+    color: white;
+}
+table{
+border: 1px solid black;
+}
+/* ul>li>a :hover
+{
+color:transparent;
+border:1px solid white;
+} */
+ul>li>a{
+color:white;
+font-family:calibri;
+font-size:15px;
+}
+
+/*user Dashboard html ends here */
+/*Solicitor Dashboard starts here */
+.sdashboardimage{
+width:-webkit-fill-available;
+width: -moz-available;
+
+}
+.sul{
+color:white;
+float:left;
+font-family: -webkit-body;
+font-size: larger;
+}
+.snavbar {
+    background-color: #ca9e28;
+    border-color: #ca9e28;
+    font-family: calibri;
+    font-size: 15px;
+}
+.hover>li>a:hover{
+    text-decoration: none;
+    background-color: #eeeeee17;
+    border: 1px solid white;
+    border-radius: 1em;
+    color: white;
+	font-size:15px;
+    /* width: 75%; */
+}
+.tableclass{
+background-color:#ca9e28;
+font-size: 15px;
+    font-family: calibri;
+    color: white;
+}
+table{
+border: 1px solid black;
+}
+/* ul>li>a :hover
+{
+color:transparent;
+border:1px solid white;
+} */
+ul>li>a{
+color:white;
+font-family:calibri;
+font-size:15px;
+}
+
+/*Solicitor Dashboard ends here */
+
+/* Underwrite Dashboard starts here */
+.UWlabel
+{
+color: black;
+font-size: 16px;
+font-weight:100;
+}
+.sul{
+color:white;
+float:left;
+font-family: -webkit-body;
+font-size: larger;
+}
+.uwnavbar {
+    background-color: #6db795;
+    border-color: #6db795;
+    font-family: calibri;
+    font-size: 15px;
+}
+.hover>li>a:hover{
+    text-decoration: none;
+    background-color: #eeeeee17;
+    border: 1px solid white;
+    border-radius: 1em;
+    color: white;
+	font-size:15px;
+	   
+    /* width: 75%; */
+}
+.uwtableclass{
+background-color:#6db795;
+font-size: 15px;
+    font-family: calibri;
+    color: white;
+}
+table{
+border: 1px solid black;
+}
+/* ul>li>a :hover
+{
+color:transparent;
+border:1px solid white;
+} */
+ul>li>a{
+color:white;
+font-family:calibri;
+font-size:15px;
+}
+/* underwriter Dashbaord endas here */

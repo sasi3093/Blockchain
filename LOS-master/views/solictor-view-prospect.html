@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Solicitor Dashboard Form</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href = "Css/bootstrap.min.css" rel = "stylesheet">
+<link href="Css/style.css" rel="stylesheet">
+
+<link href = "Css/font-awesome.min.css" rel = "stylesheet">
+<link href = "Css/sanSourcePro.css" rel = "stylesheet">
+<script src="Js/Common.js"></script>
+ </head>
+<body>
+<form name="dashboardform" onload="formatAMPM()">
+
+		<div class="container-fluid" style="padding:0px">
+			<img class="sdashboardimage" src="Images/Solicitor_homeimage.jpg" height="200" style="position:none">
+			
+		</div>
+		<nav class="snavbar">
+				<div class="container-fluid" style="padding:0px">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+							<span class="sr-only"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<div class="collapse navbar-collapse ">
+							<ul class="nav navbar-nav hover" >
+								<li class="button active" role="button" ><a style="pointer-events: none;" class="sul disabled" href="#">Valuation For Application &nbsp;</a></li>	
+								
+						   </ul>
+							<ul class="nav snavbar navbar-nav navbar-right hover" >
+								<li class="button"  onclick="logout()"><a class="fa fa-power-off" aria-hidden="true" href=user-login.html>&nbsp;Logout</a></li>
+					</ul>						   
+					</div>		
+					</div>
+		</nav>
+		<br>
+				<div class="col-md-12">
+					<div class="col-md-offset-3 col-md-3">
+					<div class="form-group">
+						<div class="input" value="propertyId">
+							<label class="UWlabel">PropertyId &nbsp; :&nbsp; &nbsp;</label>		<select  class="form-control dropdown" style="border-radius: 1em;"name="DealerRto" id="DealerRto">
+										  <option  value="" disabled selected>property Id</option>
+											<option value="Dealer" name="Dealer">Dealer</option>
+										   <option value="RTO" name="RTO">RTO</option>
+								</select>
+							</div>
+					</div>
+				</div>
+				<span class="date" id="date"></span>
+		</div>
+		
+		<br>
+		<div class="container">
+			<table class="table table-stripped">
+				<thead class="tableclass">
+					<tr> 
+						<td>Prospect Id</td>
+						<td>Name of Builder</td>
+						<td>GPS location</td>
+						<td>Name of the Property</td>
+						<td>Survey No</td>
+						<td>Rera No</td>
+						<td>create Application</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><a href="#">P0001</a></td>
+						<td>Vikram</td>
+						<td>10000000</td>
+						<td>Pending</td>
+						<td>View</td>
+						<td><i class="fa fa-eye" aria-hidden="true"></i>
+</td>
+						<td>create Application</td>
+					</tr>
+					<tr>
+						<td>P0002</td>
+						<td>Bhavani</td>
+						<td>10000000</td>
+						<td>Pending</td>
+						<td>View</td>
+						<td><i class="fa fa-eye" aria-hidden="true"></i>
+</td>
+						<td>create Application</td>
+					</tr>
+					<tr>
+						<td>P0003</td>
+						<td>Sasikala</td>
+						<td>10000000</td>
+						<td>Pending</td>
+						<td>View</td>
+						<td><i class="fa fa-eye" aria-hidden="true"></i>
+</td>
+						<td>create Application</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+
+</form>
+<script src="JS/jquery-3.1.1.min.js"></script>
+<script src="JS/bootstrap.min.js"></script>
+<footer style="position:fixed;
+   left:0px;
+   bottom:0px;
+   height:20px;
+   width:100%;
+   background:black;color: white;
+    font-family: -webkit-body;">
+<div class="col-sm-12 container-fluid">
+        <p style="text-align:center">&copy;&nbsp;&nbsp;&nbsp;   Copyright 2017 LOC link Services.All Rights Reserved</p>
+      </div>
+</footer>
+
+</body>
+</html>

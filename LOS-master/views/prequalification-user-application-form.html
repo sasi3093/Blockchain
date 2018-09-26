@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Main Login Form</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href = "Css/bootstrap.min.css" rel = "stylesheet">
+<script src="Js/jquery-3.1.1.min.js"></script>
+<script src="Js/bootstrap.min.js"></script>
+<link href = "Css/font-awesome.min.css" rel = "stylesheet">
+<link href = "Css/sanSourcePro.css" rel = "stylesheet">
+<link href = "Css/BankPrequalification.css" rel = "stylesheet">
+ </head>
+<body  >
+<form name="MyForm" action="DashBoard.html" method="get">
+			<div class="col-md-12">
+				<div class="row">
+					<div class="container">
+					<h5 class="labelheading">1.Application Personal Details</h5>
+					<table class="table table-strippd">
+						<thead>
+						<tr>
+							<td></td>
+							<td>
+							<b>First Applicant </b>
+							</td>
+							<!-- <td>
+							<b>Second Applicant </b>
+							</td> -->
+						</tr>
+						</thead>
+				<tbody>
+					<!-- <hr style=" margin-top: 35px;border-top: 1px solid #151313;">		 -->	
+						<tr>
+							<td>
+							<label>1. Title  </label>
+							</td>
+							<td>
+								
+											<input type="checkbox" id="titlefc1" name="cb"><label for="titlefc1">Mr&nbsp;</label>
+											<input type="checkbox" id="titlefc2" name="cb"><label for="titlefc2">Mrs&nbsp;</label>
+											<input type="checkbox" id="titlefc3" name="cb"><label for="titlefc3">Miss&nbsp;</label>
+											<input type="checkbox" id="titlefc4" name="cb"><label for="titlefc4">Other&nbsp;</label><br>
+											<label>Other(specify)</label><input type="textbox"/>
+							</td>
+							<!-- <td>
+							
+											<input type="checkbox" id="titlesc1" name="cb"><label for="titlesc1">Mr&nbsp;</label>
+											<input type="checkbox" id="titlesc2" name="cb"><label for="titlesc2">Mrs&nbsp;</label>
+											<input type="checkbox" id="titlesc3" name="cb"><label for="titlesc3">Miss&nbsp;</label>
+											<input type="checkbox" id="titlesc4" name="cb"><label for="titlesc4">Other&nbsp;</label><br>
+											<label>Other(specify)</label><input type="textbox"/>							
+							</td> -->
+						</tr>		
+						<tr>
+									<td>
+									<label>2. Fornames </label>
+									</td>
+									<td>
+										<input type="textbox"/>
+									</td>
+									<!-- <td>
+									<input type="textbox"/>						
+									</td> -->
+					</tr>
+					<tr>
+									<td>
+									<label>3. Surnames </label>
+									</td>
+									<td>
+										<input type="textbox"/>
+									</td>
+									<!-- <td>
+									<input type="textbox"/>						
+									</td> -->
+					</tr>
+					<tr>
+									<td>
+									<label>4. Age and Date of birth</label>
+									</td>
+									<td>
+										<label>Age &nbsp;</label><input type="number"/>
+										<label>DOB &nbsp;</label><input type="date" placeholder="dd/mm/yyyy"/>
+									</td>
+									<!-- <td>
+										<label>Age &nbsp;</label><input type="number"/>
+										<label>DOB &nbsp;</label><input type="date" placeholder="dd/mm/yyyy"/>
+									</td> -->
+					</tr>
+					<tr>
+									<td>
+									<label>5. Gender</label>
+									</td>
+									<td>
+											<input type="checkbox" id="fMale" name="cb"><label for="fMale">Male&nbsp;</label>
+											<input type="checkbox" id="fFeMale" name="cb"><label for="fFeMale">FeMale&nbsp;</label>
+									</td>
+									<!-- <td>
+											<input type="checkbox" id="sMale" name="cb"><label for="sMale">Male&nbsp;</label>
+											<input type="checkbox" id="sFeMale" name="cb"><label for="sFeMale">FeMale&nbsp;</label>
+									</td> -->
+					</tr>
+					<tr>
+									<td>
+									<label>6. Have you been known by another name in last six years?</label>
+									</td>
+									<td>
+										<input type="checkbox" id="ffc1" name="cb"><label for="ffc1">No&nbsp;</label>
+											<input type="checkbox" id="ffc2" name="cb"><label for="ffc2">Yes&nbsp;</label><br>
+										<small class="form-text text-muted">If yes, please state below</small><br>
+										<input type="checkbox" id="fc1" name="cb"><label for="fc1">Mr&nbsp;</label>
+											<input type="checkbox" id="fc2" name="cb"><label for="fc2">Mrs&nbsp;</label>
+											<input type="checkbox" id="fc3" name="cb"><label for="fc3">Miss&nbsp;</label>
+											<input type="checkbox" id="fc4" name="cb"><label for="fc4">Other&nbsp;</label><br>
+											<label>Other(specify)</label><input type="textbox"/><br>	
+											<label>Forenames</label><input type="textbox"/><br>	
+											<label>Surnames</label><input type="textbox"/><br><br>
+											<label style="">From &nbsp;</label><input type="date" placeholder="dd/mm/yyyy"/>
+											<label>To &nbsp;</label><input type="date" placeholder="dd/mm/yyyy"/>
+								
+									</td>
+									<!-- <td>
+										<input type="checkbox" id="ssc1" name="cb"><label for="ssc1">No&nbsp;</label>
+											<input type="checkbox" id="ssc2" name="cb"><label for="ssc2">Yes&nbsp;</label><br>
+										<small class="form-text text-muted">If yes, please state below</small><br>
+											<input type="checkbox" id="sc1" name="cb"><label for="sc1">Mr&nbsp;</label>
+											<input type="checkbox" id="sc2" name="cb"><label for="sc2">Mrs&nbsp;</label>
+											<input type="checkbox" id="sc3" name="cb"><label for="sc3">Miss&nbsp;</label>
+											<input type="checkbox" id="sc4" name="cb"><label for="sc4">Other&nbsp;</label><br>
+											<label>Other(specify)</label><input type="textbox"/><br>	
+											<label>Forenames</label><input type="textbox"/><br>	
+											<label>Surnames</label><input type="textbox"/><br><br>
+											<label>From &nbsp;</label><input type="date" placeholder="dd/mm/yyyy"/>
+											<label>To &nbsp;</label><input type="date" placeholder="dd/mm/yyyy"/>
+								
+									</td> -->
+					</tr>
+					<tr>
+									<td>
+									<label>7.Nationality  </label>
+									</td>
+									<td>
+										<input type="textbox"/><br>
+										<label>Country of Residence</label><input type="textbox"/>	
+									</td>
+									<!-- <td>
+									<input type="textbox"/><br>
+										<label>Country of Residence</label><input type="textbox"/>						
+									</td> -->
+									
+					</tr>
+					<tr>
+									<td>
+									<label>8.Marital Status  </label>
+									</td>
+									<td>
+										<input type="checkbox" id="fSingle" name="cb"><label for="fSingle">Single&nbsp;</label>
+										<input type="checkbox" id="fMarried" name="cb"><label for="fMarried">Married&nbsp;</label>
+										<input type="checkbox" id="fCivilPartner" name="cb"><label for="fCivilPartner">Civil Partner&nbsp;</label><br>
+										<input type="checkbox" id="fDivorced" name="cb"><label for="fDivorced">Divorced&nbsp;</label>
+										<input type="checkbox" id="fwidow" name="cb"><label for="fwidow">widow/er&nbsp;</label>
+									</td>
+									<!-- <td>
+										<input type="checkbox" id="sSingle" name="cb"><label for="sSingle">Single&nbsp;</label>
+										<input type="checkbox" id="sMarried" name="cb"><label for="sMarried">Married&nbsp;</label>
+										<input type="checkbox" id="sCivilPartner" name="cb"><label for="sCivilPartner">Civil Partner&nbsp;</label><br>
+										<input type="checkbox" id="sDivorced" name="cb"><label for="sDivorced">Divorced&nbsp;</label>
+										<input type="checkbox" id="swidow" name="cb"><label for="swidow">widow/er&nbsp;</label>
+									</td> -->
+					</tr>
+					<tr>
+									<td>
+									<label for="address">9. Current address including postcode  </label><br>
+									
+									</td>
+									<td>
+										<textarea id="address" rows="4" width="25%"></textarea>
+									<!-- <label>No</label><input type="checkbox"/>							
+									<label>yes</label><input type="checkbox"/>	 <small id="emailHelp" class="form-text text-muted">If no please give details in section 9</small>					
+							 -->
+									</td>
+									<!-- <td>
+									<textarea rows="4" width="25%"></textarea>	
+										</td> -->
+					</tr>
+					<!-- <tr>
+									<td>
+									<label>Will this be your correspondence address? </label>
+									</td>
+									<td>
+										<label>No</label><input type="checkbox"/>							
+									<label>yes</label><input type="checkbox"/>	 <small id="emailHelp" class="form-text text-muted">If no please give details in section 9</small>					
+									</td>
+									<td>
+										<label>No</label><input type="checkbox"/>	
+										<label>yes</label><input type="checkbox"/>	 <small id="emailHelp" class="form-text text-muted">If no please give details in section 9</small>					
+									</td>
+					</tr> -->
+					
+					</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="container">
+				
+					<div class="col-md-offset-6 col-md-3">
+						<input type="button" value ="Submit"class="btn-success buttonclass">
+					</div>
+					<div class="col-md-3">
+						<input type="reset" value ="Reset"class="btn-success buttonclass">
+					</div>
+			</div>
+		</div>
+</form>
+</body>
+
+</html>

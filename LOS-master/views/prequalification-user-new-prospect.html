@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Prequalification user new prospect Form</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href = "css/bootstrap.min.css" rel = "stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<link href = "css/font-awesome.min.css" rel = "stylesheet">
+<link href = "css/sanSourcePro.css" rel = "stylesheet">
+<link href = "css/BankPrequalification.css" rel = "stylesheet">
+<script src="js/Common.js"></script>
+ </head>
+<body  onload="formatAMPM();">
+<form name="MyForm" method="get">
+<div class="container-fluid" style="padding:0px">
+			<!-- <img  class="dashboardimage"src="Images/Dashboard.jpg"height="200"> -->
+			<img class="userlogo" src="img/LOS Logo.png">
+		</div>
+		<nav class="navbar">
+				<div class="container-fluid" style="padding:0px">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+							<span class="sr-only"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<div class="collapse navbar-collapse ">
+							<ul class="nav navbar-nav hover" >
+								<li class="button active" role="button"><a href="#">View prospect&nbsp;</a></li>	
+							<!-- 	<li class="button"><a href="#">New Prospect&nbsp;</a></li> -->
+						   </ul>
+							<ul class="nav navbar navbar-nav navbar-right hover" >
+								<li class="button"><span class="date" id="date" ></span></li>
+								<li class="button"  onclick="logout()"><a class="fa fa-power-off" aria-hidden="true" href=user-login.html>&nbsp;Logout</a></li>
+					</ul>						   
+					</div>		
+					</div>
+				</nav>
+				
+
+<div class="container">
+	<div class="col-md-12">
+		<div class=" col-md-4">
+			<label>Prospect Number &nbsp;:</label><input type="text" disabled id="prospect_no"> <!-- get id from the grid -->
+		</div>
+		<div class="col-md-4">
+			<!-- <label>Loan Product type</label><input type ="text" >
+ -->		
+			<div class="form-group">
+						<div class="input" value="propertyId">
+							<label class="UWlabel">PropertyId &nbsp; :&nbsp; &nbsp;</label>		
+								<select  class="form-control dropdown" style="border-radius: 1em;"name="loantype" id="loantype" value="LoanType">
+										  
+											<option value="housingloan" id="housingloan" name="Dealer">HousingLoan</option>
+										   <option value="autoloan" id ="autoloan" name="RTO">AutoLoan</option>
+								</select>
+							</div>
+					</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+			<div class=" col-md-6">
+				<div class="row">
+					<div class="container">
+					<h5 class="labelheading">Application Personal Details</h5>
+					<table class="table table-strippd">
+						<thead>
+						<tr>
+							<td></td>
+							<td>
+							
+							</td>
+							 <td><b>Applicant </b>
+							</td>
+							 <td>
+							</td>
+						</tr>
+						</thead>
+				<tbody>
+					<!-- <hr style=" margin-top: 35px;border-top: 1px solid #151313;">		 -->	
+						<tr>
+							<td>
+							<label>Title  </label>
+							</td>
+							<td id="title">
+								
+											<input type="checkbox" id="titlefc1" name="cb" checked ><label for="titlefc1">Mr&nbsp;</label>
+											<input type="checkbox" id="titlefc2" name="cb"><label for="titlefc2">Mrs&nbsp;</label>
+											<input type="checkbox" id="titlefc3" name="cb"><label for="titlefc3">Miss&nbsp;</label>
+											<input type="checkbox" id="titlefc4" name="cb"><label for="titlefc4">Other&nbsp;</label><br>
+											<label>Other(specify)</label><input type="textbox"/>
+							</td>
+							<td>
+									<label>Age and Date of birth</label>
+									</td>
+									<td>
+										<label>Age &nbsp;</label><input type="number" value="50"/>
+										<label>DOB &nbsp;</label><input type="date" placeholder="dd/mm/yyyy"/>
+									</td>
+							<!-- <td>
+							
+											<input type="checkbox" id="titlesc1" name="cb"><label for="titlesc1">Mr&nbsp;</label>
+											<input type="checkbox" id="titlesc2" name="cb"><label for="titlesc2">Mrs&nbsp;</label>
+											<input type="checkbox" id="titlesc3" name="cb"><label for="titlesc3">Miss&nbsp;</label>
+											<input type="checkbox" id="titlesc4" name="cb"><label for="titlesc4">Other&nbsp;</label><br>
+											<label>Other(specify)</label><input type="textbox"/>							
+							</td> -->
+						</tr>		
+						<tr>
+									<td>
+									<label>Fornames </label>
+									</td>
+									<td>
+										<input type="textbox" required id="forename" value="Mahindra" />
+									</td>
+									<td>
+									<label>Gender</label>
+									</td>
+									<td>
+											<input type="checkbox" id="fMale" name="cb" checked><label for="fMale">Male&nbsp;</label>
+											<input type="checkbox" id="fFeMale" name="cb"><label for="fFeMale">FeMale&nbsp;</label>
+									</td>
+									<!-- <td>
+									<input type="textbox"/>						
+									</td> -->
+					</tr>
+					<tr>
+									<td>
+									<label> Surnames </label>
+									</td>
+									<td>
+										<input type="textbox" required id="surname" value="Rajan"/>
+									</td>
+									<td>Prospect Number
+						</td>
+						<td>
+										<input type="textbox" id="prospect_number" required/><br>	
+									</td>
+					</tr>
+					<tr>
+									<td>
+									<label>Nationality  </label>
+									</td>
+									<td>
+										<input type="textbox" value="Indian"/><br>
+										<label>Country of Residence</label><input type="textbox" id="country_of_residence" required />	
+									</td>
+									<!-- <td>
+									<input type="textbox"/><br>
+										<label>Country of Residence</label><input type="textbox"/>						
+									</td> -->
+									<td>SSN
+						</td>
+						<td>
+										<input type="textbox" id="ssn" required /><br>	
+						</td>
+									
+					</tr>
+					<tr>
+						<td>Contact Number
+						</td>
+						<td>
+										<input type="textbox" id="contactnumber" value="9885459638" required/><br>	
+						</td>
+						<td>passport Number
+						</td>
+						<td>
+										<input type="textbox" id="pasportnumber" value="Ind456789" required /><br>	
+						</td>
+					</tr>
+					<tr>
+						<td>Current Occupation
+						</td>
+						<td>
+										<input type="textbox" id="currnetoccupation" value="Information Technology" required/><br>	
+						</td>
+						<td>Position /Title / Type of Business
+						</td>
+						<td>
+										<input type="textbox" id="businesstype" value="Software Enginner" required/><br>	
+						</td>
+						</tr>
+					<tr>
+					<td>Monthly Income
+						</td>
+						<td>
+										<input type="textbox" id="monthlyincome" value="1000000" required/><br>	
+						</td>
+						<td>years on this job
+						</td>
+						<td>
+										<input type="textbox" id="years_of_job" value="5"required/><br>	
+						</td>
+						
+					</tr>				
+					<tr>
+					<td>Email
+						</td>
+						<td>
+										<input type="textbox" id="email" value="mahindra234@gmail.com"required/><br>	
+						</td>
+						<td>Loan product type
+						</td>
+						<td>
+										<input type="textbox" id="loan_product_type" required/><br>	
+						</td>
+					</tr>
+					
+					
+					<tr>
+									<td>
+									<label for="address">Current address including postcode  </label><br>
+									
+									</td>
+									<td>
+										<textarea id="address" rows="4" width="25%" id="address" required>S/o satya Murthi , D.No:4/18/12 ,Beside Royal showroom ,Sholinganallur, chennai-600119</textarea>
+									<!-- <label>No</label><input type="checkbox"/>							
+									<label>yes</label><input type="checkbox"/>	 <small id="emailHelp" class="form-text text-muted">If no please give details in section 9</small>					
+							 -->
+									</td>
+									<td>purpose of loan
+						</td>
+						<td>
+										<textarea  rows="4" width="25%" id="purpose_of_loan" required>Purpose of loan</textarea> <br>	
+						</td>
+									<!-- <td>
+									<textarea rows="4" width="25%"></textarea>	
+										</td> -->
+					</tr>
+					
+					
+					</tbody>
+					</table>
+				</div>
+			</div>
+			
+		
+		<!-- Assets and liabilities -->
+		
+<div class="container">
+	<div class="col-md-12">
+		<div class="col-md-6">
+			<h1 class="tableheading">Assests</h1>
+			<table class="table table-stripped">
+				<!-- <thead><tr style="text-align:center;">Assests</tr></thead> -->
+			<tbody>
+				<!-- <tr>
+					<td colspan="2">Assests</td>
+					
+				</tr> -->
+				<tr>
+					<td>cash<td>
+					<td><input type="textbox" id="asset-cash"><td>
+					
+				</tr>
+				<tr>
+					<td>Checking/Saving Acc<td>
+					<td><input type="textbox" id="asset-account"><td>
+					
+				</tr>
+				<tr>
+					<td>Stocks<td>
+					<td><input type="textbox" id="asset-stocks"><td>
+					
+				</tr>
+				<tr>
+					<td>Retirement Account<td>
+					<td><input type="textbox" id="asset-retirementaccount"><td>
+					
+				</tr>
+				<tr>
+					<td>Surrender value of policies<td>
+					<td><input type="textbox" id="asset-surrender_value_of_policies"><td>
+					
+				</tr>
+				<tr>
+					<td>Total<td>
+					<td><input type="textbox" disabled style="background-color:lightgrey"id="asset-total"><td>
+					
+				</tr>
+			</tbody>
+		</table>
+		</div>
+		<div class="col-md-6">
+		<h1 class="tableheading">Liabilites</h1>
+		<table class="table table-stripped">
+			<tbody>
+				<!-- <tr>
+					
+					<td>Liabilites</td>
+					<td></td>
+				</tr> -->
+				<tr>
+					<td>Mortages<td>
+					<td><input type="textbox" id="mortages"><td>
+				</tr>
+				<tr>
+					<td>Credit Cards<td>
+					<td><input type="textbox" id="credit_cards"><td>
+					
+				</tr>
+				<tr>
+					<td>Other Loan Amounts<td>
+					<td><input type="textbox" id="other_loan_amount"><td>
+					
+				</tr>
+				<tr>
+					<td>Alimony/child Support<td>
+					<td><input type="textbox" id="alimony_child_support"><td>
+					
+				</tr>
+				<tr>
+					<td>Net Worth<td>
+					<td><input type="textbox" id="networth"><td>
+					
+				</tr>
+				
+			</tbody>
+		</table>
+		
+		</div>
+	</div>
+</div>	
+		<div class="container">
+				
+					<div class="col-md-offset-4 col-md-3">
+						<div class="form-group ">
+					<div class="input">
+						<button id="reset" type="reset" class="input-md form-control" style=" background-color: #017abd;
+    border-color: #017abd;border-radius: 1em;color:white"><b>Reset<b></button>
+  					</div>
+				</div>
+					</div>
+					<div class="col-md-3">
+						<div class="form-group ">
+					<div class="input">
+						<button id="submit" type="submit" class="input-md form-control" style=" background-color: #017abd;
+    border-color: #017abd;border-radius: 1em;color:white"><b>Submit<b></button>
+  					</div>
+				</div>
+					</div>
+		</div>
+	</div>
+		
+</form>
+</body>
+
+</html>

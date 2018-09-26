@@ -1,0 +1,50 @@
+.header img {
+  float: left;
+  width: 100px;
+  height: 100px;
+}
+
+.header h1 {
+  position: relative;
+  top: 18px;
+  left: 10px;
+  color:#184863;
+}
+body{
+	font-family: calibri;
+		font-size:15px;
+}
+.navbar {
+	background-color: #184863;
+}
+.logout{
+	width: 24px;
+}
+table.test td {
+	margin: 12px 12px 12px 12px;
+    padding:0px 191px 0px 12px;
+}
+table.test {
+  border-collapse: separate;
+  border-spacing: 10px;
+  *border-collapse: expression('separate', cellSpacing = '10px');
+}
+table .test{
+    border-spacing: 21px;
+    border-collapse: separate;
+}
+.valuationTitle{
+	background-color: #184863;
+	color:white;
+	font-size:20px;
+}
+.propertyrelated td{
+	width:20%;
+}
+.btn{
+	background-color:#184863;
+	color:white;
+}
+.buttons{
+	margin-left:40%;
+}

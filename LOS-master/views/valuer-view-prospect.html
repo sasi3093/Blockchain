@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Valuer Dashboard Form</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href = "Css/bootstrap.min.css" rel = "stylesheet">
+<link href="Css/style.css" rel="stylesheet">
+
+<link href = "Css/font-awesome.min.css" rel = "stylesheet">
+<link href = "Css/sanSourcePro.css" rel = "stylesheet">
+<script src="Js/Common.js"></script>
+ </head>
+<body>
+<form name="dashboardform">
+               <div class="vcontainer-fluid ">
+					<img class="vdashboardimage header" height="200"src="Images/valuer.jpg">
+					<div style="position:relative;    top: 20px;">
+                                        <img style="display:inline;width:14.5%" src="Images/valuer logo.png">
+                                         <h1 style="display:inline;white-space:nowrap;font-family:calibri;font-size:50px;color:white;padding-top:10%">THE VALUER</h1>  
+					</div>
+                </div>              
+				<nav class="vnavbar">
+				<div class="container-fluid" style="padding:0px">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+							<span class="sr-only"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<div class="collapse navbar-collapse ">
+							<ul class="nav navbar-nav hover" >
+								<li class="button active" role="button" ><a style="pointer-events: none;" class="sul disabled" href="#">Verify Application &nbsp;</a></li>	
+								
+						   </ul>
+							<ul class="nav vnavbar navbar-nav navbar-right hover" >
+								<li class="button"  onclick="logout()"><a class="fa fa-power-off" aria-hidden="true" href=user-login.html>&nbsp;Logout</a></li>
+					</ul>						   
+					</div>		
+					</div>
+		</nav>
+<br>
+		<div class="container">
+			<table class="table table-stripped">
+				<thead class="valuertable">
+					<tr> 
+						<td>Prospect No</td>
+						<td>Customer Name</td>
+						<td>Loan Amount(Rs)</td>
+						<td>Status</td>
+						<td>View prospect</td>
+						<td>create Application</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><a href="#">P0001</a></td>
+						<td>Vikram</td>
+						<td>10000000</td>
+						<td>Pending</td>
+						<td class="fa fa-eye" aria-hidden="true" ></td>
+						<td>create Application</td>
+					</tr>
+					<tr>
+						<td>P0002</td>
+						<td>Bhavani</td>
+						<td>10000000</td>
+						<td>Pending</td>
+						<td class="fa fa-eye" aria-hidden="true" >View</td>
+						<td>create Application</td>
+					</tr>
+					<tr>
+						<td>P0003</td>
+						<td>Sasikala</td>
+						<td>10000000</td>
+						<td>Pending</td>
+						<td class="fa fa-eye" aria-hidden="true"></td>
+						<td>create Application</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+
+</form>
+<script src="Js/jquery-3.1.1.min.js"></script>
+<script src="Js/bootstrap.min.js"></script>
+<footer style="position:fixed;
+   left:0px;
+   bottom:0px;
+   height:20px;
+   width:100%;
+   background:black;color: white;
+    font-family: -webkit-body;">
+<div class="col-sm-12 container-fluid">
+        <p style="text-align:center">&copy;&nbsp;&nbsp;&nbsp;   Copyright 2017 LOC link Services.All Rights Reserved</p>
+      </div>
+</footer>
+
+</body>
+</html>
